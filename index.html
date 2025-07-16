@@ -586,7 +586,7 @@
 
   <main id="main-content" role="main" tabindex="-1">
     <!-- Main Heading -->
-    <h1 aria-label="Specter's Dev Servicesr">Specter's Dev Services
+    <h1 aria-label="Specter's Dev Services">Specter's Dev Services
 
     </h1>
 
@@ -659,60 +659,50 @@
 
     <!-- Cash App Donate Button -->
     <div class="cashapp-btn" role="region" aria-label="Donate via Cash App">
-      <button
-        type="button"
-        class="cashapp"F
-        aria-label="My Cashapp $$$"
-        onclick="window.open('https://cash.app/$SpecterDev', '_blank', 'noopener,noreferrer')"
-      >
-        <img src="CashApp.png" alt="CashApp.png" />
-        My Form Of Payment (SUBMIT A FORM FIRST UNLESS DONATING (:))
-      </button>
-    </div>
-  </main>
+  <button
+    type="button"
+    class="cashapp"
+    aria-label="My Cashapp $$$"
+    onclick="window.open('https://cash.app/$SpecterDev', '_blank', 'noopener,noreferrer')"
+  >
+    <img src="CashApp.png" alt="CashApp Logo" />
+    My Form Of Payment (SUBMIT A FORM FIRST UNLESS DONATING (:))
+  </button>
+</div>
+</main>
 
-  <!-- ===================
-       Tawk.to Live Chat
-       =================== -->
+<!-- ===================
+     Tawk.to Live Chat
+     =================== -->
+<script type="text/javascript">
+  (function () {
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
 
-  <script>
-    /**
-     * Tawk.to Live Chat widget with debug mode enabled.
-     * The property ID is included as requested.
-     * This snippet dynamically loads Tawk.to asynchronously to avoid blocking the page.
-     * It also provides robust error handling and logs status to console in debug mode.
-     */
-    (function () {
-      var Tawk_API = window.Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      Tawk_API.debug = true; // Enable debug mode for detailed logs
+    Tawk_API.debug = true; // Enable debug logging
 
-      // Property ID for your Tawk.to widget
-      var propertyID = '64621e597ff06f49d615ad5f';
+    var s1 = document.createElement("script");
+    s1.async = true;
+    s1.src = "https://embed.tawk.to/64621e597ff06f49d615ad5f/1h6a4vdk5";
+    s1.charset = "UTF-8";
+    s1.setAttribute("crossorigin", "*");
 
-      // Load Tawk.to script asynchronously
-      var script = document.createElement('script');
-      script.async = true;
-      script.src = 'https://embed.tawk.to/' + propertyID + '/1h6a4vdk5';
-      script.charset = 'UTF-8';
-      script.setAttribute('crossorigin', '*');
+    s1.onload = function () {
+      if (Tawk_API.debug) {
+        console.log("✅ Tawk.to chat loaded successfully.");
+      }
+    };
 
-      script.onload = function () {
-        if (Tawk_API.debug) console.log('Tawk.to widget loaded successfully.');
-      };
+    s1.onerror = function (err) {
+      console.error("❌ Failed to load Tawk.to script:", err);
+    };
 
-      script.onerror = function (e) {
-        console.error('Failed to load Tawk.to widget script.', e);
-      };
+    var s0 = document.getElementsByTagName("script")[0];
+    s0.parentNode.insertBefore(s1, s0);
 
-      // Insert script before first script tag in the document
-      var firstScript = document.getElementsByTagName('script')[0];
-      firstScript.parentNode.insertBefore(script, firstScript);
-
-      // Expose Tawk_API globally for further interactions
-      window.Tawk_API = Tawk_API;
-    })();
-  </script>
+    window.Tawk_API = Tawk_API;
+  })();
+</script>
 </body>
 
 </html>
