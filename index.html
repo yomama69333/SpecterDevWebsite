@@ -674,35 +674,29 @@
 <!-- ===================
      Tawk.to Live Chat
      =================== -->
+<!-- Start of Tawk.to Script -->
 <script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
   (function () {
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
-
-    Tawk_API.debug = true; // Enable debug logging
-
-    var s1 = document.createElement("script");
+    var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = "https://embed.tawk.to/64621e597ff06f49d615ad5f/1h6a4vdk5";
+    s1.src = "https://embed.tawk.to/68774dd23090ca19169f80ec/1j090fv7b";
     s1.charset = "UTF-8";
     s1.setAttribute("crossorigin", "*");
 
     s1.onload = function () {
-      if (Tawk_API.debug) {
-        console.log("✅ Tawk.to chat loaded successfully.");
-      }
+      console.log("✅ Tawk.to loaded successfully");
     };
 
-    s1.onerror = function (err) {
-      console.error("❌ Failed to load Tawk.to script:", err);
+    s1.onerror = function (e) {
+      console.error("❌ Failed to load Tawk.to widget script.", e);
     };
 
-    var s0 = document.getElementsByTagName("script")[0];
     s0.parentNode.insertBefore(s1, s0);
-
-    window.Tawk_API = Tawk_API;
   })();
 </script>
-</body>
+<!-- End of Tawk.to Script -->
 
+</body>
 </html>
